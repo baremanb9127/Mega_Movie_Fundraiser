@@ -1,20 +1,21 @@
 # Functions go here 
 
-def not_blank(question):
+def not_blank(question , error_message):
     valid = False
 
 
     while not valid:
         response = input(question)
-# If name is not blank, program continues
+
         if response != "":
             return response
-
-        # If name is blank, show error and repeat loop
         else:
-            print ("Sorry - this can't be blank")
+            print (error_message)
 
     
 # Main Routine Goes Here
-name = not_blank("Name: ")
+name = not_blank("Name: " , "Sorry - this can't be blank, " 
+"please enter a name.")
 print(name)
+
+

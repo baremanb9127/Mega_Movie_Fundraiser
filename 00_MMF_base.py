@@ -52,15 +52,15 @@ def int_check(question):
 # Loop to get ticket details
 # Initialise loop so that it runs at least onces
 name = ""
-count = 0
+ticket_count = 0
 MAX_TICKETS = 5
 
-while name != "xxx" and count < MAX_TICKETS:
+while name != "xxx" and ticket_count < MAX_TICKETS:
    
     # Tells the user how many seats are left
-    if count < 4:
+    if ticket_count < 4:
         print("You have {} seats "
-        "left".format(MAX_TICKETS - count))
+        "left".format(MAX_TICKETS - ticket_count))
 
     # Warns user that there is only ONE seat left
     else:
@@ -85,14 +85,14 @@ while name != "xxx" and count < MAX_TICKETS:
         print("That is very old, it looks like a mistake ")
         continue
 
-    count += 1
+    ticket_count += 1
 
-if count == MAX_TICKETS:
+if ticket_count == MAX_TICKETS:
     print("You have sold all the tickets!")
 else:
     print("You have sold {} tickets. \n"
          "There are still {} places still available "
-         .format(count, MAX_TICKETS - count))
+         .format(ticket_count, MAX_TICKETS - ticket_count))
     
 
     
