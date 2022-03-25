@@ -24,11 +24,11 @@ def int_check(question):
 age = int_check("Age ")
 
 # Check that age is valid
-    if age < 12:
-        print("Sorry, you are too young for this movie ")
-        continue
-    if age > 130:
-        print("That is very old, it looks like a mistake ")
-        continue
+# if age < 12:
+#     print("Sorry, you are too young for this movie ")
+#     continue
+# if age > 130:
+#     print("That is very old, it looks like a mistake ")
+#     continue
 
 
